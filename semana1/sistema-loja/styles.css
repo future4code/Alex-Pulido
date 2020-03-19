@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top ul{
+    padding: 15px;
+    float: 100%;
+    list-style: none;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+.top ul li{
+    display: inline;
+}
+
+.top 
