@@ -26,17 +26,17 @@ button:focus {
     color: white;
 }
 
-/* img {
+img {
     width: 100px;
-} */
+}
 
 div>p:first-child {
     display: inline;
 }
 
-/* div img {
+div img {
     background: black;
-} */
+}
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -106,6 +106,7 @@ div:last-child {
 
 table {
     width: 60%;
+    font-weight: bold;
 }
 
 td button {
@@ -114,6 +115,9 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    font-weight: bold;
+    font-size: 15px;
+    
 }
 
 .container-do-search {
