@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -25,17 +26,17 @@ button:focus {
     color: white;
 }
 
-img {
+/* img {
     width: 100px;
-}
+} */
 
 div>p:first-child {
     display: inline;
 }
 
-div img {
+/* div img {
     background: black;
-}
+} */
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -72,10 +73,13 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding: 100px 0px;
+    
+    
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 15px 825px;
 }
 
 #container-para-comprar {
