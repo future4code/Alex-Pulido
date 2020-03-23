@@ -25,6 +25,13 @@ input {
 button:focus {
     color: white;
 }
+button:hover{
+    color: #ffaf43;
+}
+
+button:active{
+    color: aqua;
+}
 
 img {
     width: 100px;
@@ -120,6 +127,8 @@ td button {
     font-size: 15px;
     
 }
+
+
 
 .container-do-search {
     margin-top: 20px;
