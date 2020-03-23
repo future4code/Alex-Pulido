@@ -120,9 +120,15 @@ div:last-child {
 }
 
 table {
+    /* display: block; */
     width: 60%;
     font-weight: bold;
     text-align: center;
+    
+    align-items: center;
+    
+    
+    
 }
 
 td button {
@@ -133,6 +139,7 @@ td button {
     color: black;
     font-weight: bold;
     font-size: 15px;
+    
     
 }
 
