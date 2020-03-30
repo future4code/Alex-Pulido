@@ -78,21 +78,39 @@
         //     VII.  1
 
 
-kelvinA = (77 -32)*5/9 + 273.15
-console.log(kelvinA)
+// kelvinA = (77 -32)*5/9 + 273.15
+// console.log(kelvinA)
 
-fahrB = (80*9/5) + 32
-console.log(fahrB)
+// fahrB = (80*9/5) + 32
+// console.log(fahrB)
 
-fahrC = (30*9/5) + 32
-kelvinC = (30+273)
-console.log("O valor em Fahrenheit é "+fahrC+" e o valor em Kelvin é "+kelvinC)
+// fahrC = (30*9/5) + 32
+// kelvinC = (30+273)
+// console.log("O valor em Fahrenheit é "+fahrC+" e o valor em Kelvin é "+kelvinC)
 
-let celsius = prompt("Qual a temperatura em Celsius?")
 
-const fahrD = (celsius*9/5)+32
-const KelvinD = (30+273,15)
-console.log("O valor de "+celsius+" graus celsius em Fahrenheit é "+fahrD+" e em Kelvin é "+KelvinD)
+// celsius = prompt("Qual a temperatura em Celsius?")
+// resultCelsius = parseInt(celsius)
+// fahrD = (celsius*9/5)+32
+// KelvinD = (resultCelsius+273)
+// console.log("O valor de "+celsius+" graus celsius em Fahrenheit é "+fahrD+" e em Kelvin é "+KelvinD)
+
+// nome = prompt("Qual seu nome? ")
+// idade = prompt("Qual a sua idade? ")
+// sexo = prompt("Qual o seu sexo? ")
+// pais = prompt("Mora em que pais? ")
+// cidade = prompt("Mora em que cidade? ")
+// console.log("Resposta: Nome: "+nome)
+// console.log("Resposta: Idade: "+idade)
+// console.log("Resposta: Sexo: "+sexo)
+// console.log("Resposta: Pais:"+pais)
+// console.log("Resposta: Cidade:"+cidade)
+
+// valorConsumo = (280*0.05)
+// console.log("Valor consumido é: "+valorConsumo)
+// valorDesc = (valorConsumo*0.15)
+// valorTotal = (valorConsumo-valorDesc)
+// console.log("Valor do desconto é "+valorDesc+" então o valor total a pagar é: "+valorTotal)
 
 
 
