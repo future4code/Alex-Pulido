@@ -124,5 +124,39 @@
 
 // https://drive.google.com/open?id=1L6_yQ0Em5Qzr37Mc9mTHOrzs1lMql593
 
+// 
 
-    
+let vert = prompt("Possui ossos?")
+let pelos  
+
+if (vert==="n"){
+    console.log("Animal invertebrado")
+} else {
+    let pelos = prompt("Possui pelos?")
+    if (pelos==="s"){
+        console.log("É um mamifero")
+        let racional = prompt("O mamifero é racional?")
+        if (racional==="s"){
+            console.log("É humano")
+        } else {
+            console.log("Não é humano")
+        }
+    } else {
+        let penas = prompt("Possui penas?")
+        if (penas==="s"){
+            console.log("É uma ave")
+        } else {
+            let terrestre = prompt("Animal é terrestre?")
+            if (terrestre==="n"){
+                console.log("Animal é um peixe")
+            } else {
+                let agua = prompt("Possui parte da vida na água?")
+                if (agua==="s"){
+                    console.log("Animal é um anfibio")
+                } else {
+                    console.log("Animal é um réptil")
+                }    
+            }
+         }    
+     }
+ }    
