@@ -64,10 +64,27 @@
 
 // Exercicio - 4
 
-function idadeCachorro(idade){
-    return idade * 7;
+// A - 
+
+// function idadeCachorro(idade){
+//     return idade * 7;
+// }
+
+// const idadeDog = (idadeCachorro)
+
+// Console.log(idadeDog)
+
+// B - 
+const arrayPalavras = ["Goli", "23", "Rua Guarapari 190", "True"]
+let dados = "";
+function JuntaPalavras(nome, idade, endereco, estudante){
+    for (let palavra of arrayPalavras)
+        return dados + palavra + " ";
+
+
 }
 
-const idadeDog = (idadeCachorro)
+console.log(dados)
 
-Console.log(idadeDog)
+
+
