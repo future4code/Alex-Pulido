@@ -2,14 +2,13 @@
 
 function criarTarefa(){
     novaTask = document.getElementById("novaTask").value;
-    if (novaTask.value ==""){
+    if (novaTask ===""){
         alert("É necessário digitar a tarefa para inserir!")
     }   else{
         const diaDaSemana = document.getElementById("diaDaSemana").value;
         
         switch (diaDaSemana){
         case 'segunda':
-            
             document.getElementById("segunda").innerHTML +="<li>"+novaTask+"</li>";
             document.getElementById("novaTask").value = "";
             break;
@@ -37,8 +36,6 @@ function criarTarefa(){
             document.getElementById("domingo").innerHTML +="<li>"+novaTask+"</li>";
             document.getElementById("novaTask").value = "";
         break;
-        
         }
-        
     }
 }
