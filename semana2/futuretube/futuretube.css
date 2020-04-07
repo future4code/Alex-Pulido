@@ -1,0 +1,32 @@
+
+
+header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 90vw;
+    top: 0;
+    font-size: 30px;
+    color: black;
+    background-color: orange;
+}
+
+header p{
+    text-align: start;
+}
+
+header input{
+  
+   
+    align-items: center;
+    width: 20vw;
+    height: 3vh;
+}
+
+article{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr fr;
+
+
+}
