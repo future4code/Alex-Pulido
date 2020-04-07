@@ -75,16 +75,21 @@
 // Console.log(idadeDog)
 
 // B - 
-const arrayPalavras = ["Goli", "23", "Rua Guarapari 190", "True"]
-let dados = "";
-function JuntaPalavras(nome, idade, endereco, estudante){
-    for (let palavra of arrayPalavras)
-        return dados + palavra + " ";
+// const arrayPalavras = ["Goli", "23", "Rua Guarapari 190", "True"]
+// let dados = "";
+// function JuntaPalavras(nome, idade, endereco, estudante){
+//     for (let palavra of arrayPalavras)
+//         return dados + palavra + " ";
+// }
+// console.log(dados)
 
+// Exercicio - 5
 
+function retornaSeculo(ano){
+    if (ano <= 1100){
+        return ano;
+    } else if(ano ) {
+
+    }
 }
-
-console.log(dados)
-
-
 
