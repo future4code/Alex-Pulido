@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#trabalhe-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #132235;
+    height: 100vh;
+}
+
+#trabalhe-conosco div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #132235;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+article img {
+    width: 20vw;
+    height: 20vh;
+    border-bottom: 1px solid #132235;
+}
+
+article button {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 1em;
+    background-color: #132235;
+    color: #ffffff;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+}
+
+#perguntas-frequentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #132235;
+    color: #6ddad3;
+}
+
+#perguntas-frequentes ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+}
