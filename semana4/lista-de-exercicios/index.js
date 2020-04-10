@@ -68,3 +68,44 @@
 //     console.log(i*2)
 //     i++
 // }
+
+// Exercicio - 3
+
+// let l1 = prompt("Digite o lado A do triângulo")
+// let l2 = prompt("Digite o lado B do triângulo")
+// let l3 = prompt("Digite o lado C do triângulo")
+// if       (l1 == l2 && l2 == l3 && l3 == l1){
+//   console.log("Triangulo Equilatero");
+// }else if (l1 == l2 || l2 == l3 || l3 == l1){
+//   console.log("Triangulo Isosceles");
+// }else if (l1 != l2 && l2 != l3 && l3 != l1){
+//   console.log("Triangulo Escaleno");
+// }
+
+// Exercicio - 4
+// const a = Number(prompt("Digite o valor de A"))
+// const b = Number(prompt("Digite o valor de B"))
+// let valor = 0
+// if (a > b){
+//     console.log("O maior é "+a)
+//     valor = (a-b)
+// }else if(a < b){
+//     console.log("O maior é "+b)
+//     valor = (b-a)
+// }else if(a === b){
+//     console.log("A e B são iguai")
+// }
+// let divisivel = (a/b)
+// if (Number.isInteger(divisivel)){
+//     console.log(a+" é divisivel por "+b)
+// }else{
+//     console.log(a+" não é divisivel por "+b)
+// }
+// divisivel = (b/a)
+// if(Number.isInteger(divisivel)){
+//     console.log(b+" é divisivel por "+a)
+// }else{
+//     console.log(b+" não é divisivel por "+a)
+// }
+// console.log("A diferença entre eles é "+valor)
+
