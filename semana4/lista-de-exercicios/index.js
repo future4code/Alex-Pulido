@@ -61,10 +61,10 @@
 // fica em loop infinito.
 // Também é necessário alterar o comparador <= para apenas <, senão sempre ele irá executar uma vez mais.
 
-const quantidadeDeNumerosPares = Number(prompt("Digite a quantidade de numeros"))
+// const quantidadeDeNumerosPares = Number(prompt("Digite a quantidade de numeros"))
 
-let i = 0
-while(i < quantidadeDeNumerosPares) {
-    console.log(i*2)
-    i++
-}
+// let i = 0
+// while(i < quantidadeDeNumerosPares) {
+//     console.log(i*2)
+//     i++
+// }
