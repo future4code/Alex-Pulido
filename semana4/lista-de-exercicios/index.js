@@ -34,20 +34,37 @@
 // - No console será exibido o valor da variável array2, que será 8, ou seja, os números ímpares.
 
 // Exercicio - 4
-const numeros = [25, 12, 55, 64, 121, 44, 11, 84, 51, 48, 14, 73, 111, 283, 1, 99, 13, 31, 83, 131, 1, 1.1, -10, 25, 1590];
+// - Como não conhecia a propriedade Infinity tive que pesquisar e testar o seu uso e não consegui, o debug do Chrome retornou 
+//    que não é possível definir a propriedade.
 
-let numero1 = infinity;
-let numero2 = 0;
+// Exercícios de lógica de programação
 
-for(let numero of numeros){
-  if(numero < numero1){
-    numero1 = numero;
-  }
-  
-  if(numero > numero2){
-    numero2 = numero;
-  }
+// Exercício - 1
+// A - False
+// B - True
+// C - True
+// D - True
+// E - True
+
+// const quantidadeDeNumerosPares = prompt("Digite a quantidade de numeros pares que deseja")
+// let i = 0
+// while(i <= quantidadeDeNumerosPares, i++) {
+//     if(i % 2 ===0){ 
+//         console.log(i*2);
+
+//     }    
+
+// }
+
+// Exercício - 2
+// O código não funciona, pois não foi inserido i++ para sempre incrementar 1 no valor de i, dessa forma o while
+// fica em loop infinito.
+// Também é necessário alterar o comparador <= para apenas <, senão sempre ele irá executar uma vez mais.
+
+const quantidadeDeNumerosPares = Number(prompt("Digite a quantidade de numeros"))
+
+let i = 0
+while(i < quantidadeDeNumerosPares) {
+    console.log(i*2)
+    i++
 }
-
-console.log(numero1);
-console.log(numero2);
