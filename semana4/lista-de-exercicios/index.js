@@ -109,3 +109,19 @@
 // }
 // console.log("A diferença entre eles é "+valor)
 
+// Exercicios de funções
+// Exercicio - 1
+var numerosArray = [10, 1, 7, 4, 2, 3, 8, 15, 17, 6];
+
+function compararNumeros(a, b) {
+  return a - b;
+}
+
+console.log('Numeros do Array:', numerosArray.join());
+console.log('Ordenada sem função de comparação:', numerosArray.sort());
+console.log('Ordenada com compararNumeros:', numerosArray.sort(compararNumeros));
+
+let segundo = numerosArray[1];
+let penultimo = numerosArray[numerosArray.length - 2];
+console.log('O segundo valor do array é '+segundo+' o penúltimo valor do array é '+penultimo)
+
