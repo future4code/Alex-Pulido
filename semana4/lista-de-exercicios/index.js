@@ -139,4 +139,16 @@
 //             tipo, com variações de propriedade. 
 
 // Exercio - 2
+// function criaRetangulo(lado1, lado2){
+//     let parametros = {
+//         largura: lado1,
+//         altura:  lado2,
+//         perimetro: 2*(lado1 + lado2),
+//         area: (lado1*lado2)
+//       };
+//       return parametros;
+// }
+// console.log(criaRetangulo(2,3))
+
+// Exercicio - 3
          
