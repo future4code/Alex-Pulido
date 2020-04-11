@@ -151,4 +151,12 @@
 // console.log(criaRetangulo(2,3))
 
 // Exercicio - 3
+// const filmeFavorito = {
+//     titulo: "Forest Gump",
+//     ano:  1994,
+//     diretor: "Robert Zemeckis",
+//     atores: ["Tom Hanks", "Robin Wright"]
+// };
+
+// console.log("Venha assistir ao filme "+filmeFavorito.titulo+", de "+filmeFavorito.ano+", dirigido por "+filmeFavorito.diretor+" e estrelando "+filmeFavorito.atores)
          
