@@ -127,7 +127,16 @@
 
 // Exercicio - 2
 
-var helloFuture4 = function() {console.log("Hello Future 4")}; 
+// var helloFuture4 = function() {console.log("Hello Future 4")}; 
 
-helloFuture4()
+// helloFuture4()
 
+// Exercicios de objetos
+// Exercicio - 1
+// Array - São variáveis que podem gravar vários valores. Podemos/Devemos utilizar quando precisamos temos vários valores
+//         e precisamos armazenar de forma rápida e prática.
+// Objetos - Os objetos são uma coleção de propriedades. Eles nos possibilitam reutizar o objeto, armazenando objetos do mesmo
+//             tipo, com variações de propriedade. 
+
+// Exercio - 2
+         
