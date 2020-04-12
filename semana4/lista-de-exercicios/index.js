@@ -246,3 +246,25 @@
 // array.forEach(parOuImpar);
 // console.log(resultadoParOuImpar);
 
+// Exercico - 4
+
+let pessoasTem = [];
+let pessoasNao = [];
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+function temPermissao(item){
+    if((pessoas.altura >= 1.5) && (pessoas.idade > 14) && (pessoas.idade < 60)){
+        pessoasTem.push(item);
+    }else{
+        pessoasNao.push(item);
+    }
+}
+
+pessoas.forEach(temPermissao);
+console.log(pessoasTem)
