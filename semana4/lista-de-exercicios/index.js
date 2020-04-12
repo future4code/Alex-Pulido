@@ -159,4 +159,90 @@
 // };
 
 // console.log("Venha assistir ao filme "+filmeFavorito.titulo+", de "+filmeFavorito.ano+", dirigido por "+filmeFavorito.diretor+" e estrelando "+filmeFavorito.atores)
-         
+
+// Exercicio - 4
+// const pessoa = {
+//     nome: "Alex",
+//     idade: 41,
+//     email: "axp@axp.com",
+//     endereco: "Rua Pirapora, 170"
+// }
+// function anonimizarPessoa() {
+//     const pessoaAnonima = {
+//         ...pessoa,
+//         nome: "ANÔNIMO",
+//         idade: 41,
+//         email: "axp@axp.com",
+//         endereco: "Rua Pirapora, 170"
+//     }
+// }
+// console.log(anonimizarPessoa)
+
+// Exercicios Aula Projeto Aula 16
+
+// Exercicio - 1
+
+// Listar o primeiro indice do array.
+// Listar o último item do array.
+// Listar todo o array.
+
+// const arrayCarros = ["Civic", "Corola", "Uno", "Gol", "Corsa", "Fusca"]
+
+// console.log("Mostra o primeiro carro do array "+arrayCarros[0]);
+// console.log("Mostra o últmo carro do array "+arrayCarros[arrayCarros.length -1])
+
+// arrayCarros.forEach(function (item, indice, arrayCarros){
+//     console.log(item, indice);
+// });
+
+// Exercico - 2
+
+// let arrayAdultos = []
+// const pessoas = [
+//     {nome: "Pedro", idade: 20 },
+//     { nome: "João", idade: 10 },
+//     { nome: "Paula", idade: 12 },
+//     { nome: "Artur", idade: 89}
+// ]
+
+// // function adultos (){
+// //     for(i <= pessoas.length, )
+// //         if(pessoas.idade=>20){
+// //             arrayAdultos.push[]
+// //     }
+// // }
+
+// console.log(pessoas)
+
+// exercico - 3 - Atividades A, B e C
+
+// const array = [1, 2, 3, 4, 5, 6]
+// let valorMultiplicadoPor2 = []
+// let valorMultiplicadoPor3 = []
+// let resultadoParOuImpar = []
+// let resultado = 0
+
+// function multiplicaPor2(item){
+//     resultado = 2*item;
+//     valorMultiplicadoPor2.push(resultado);
+// }
+// function multiplicaPor3(item){
+//     resultado = 3*item;
+//     valorMultiplicadoPor3.push(resultado);
+// }
+// function parOuImpar(item){
+//     resultado = (item % 2);
+//     if (resultado === 0){
+//         resultadoParOuImpar.push(item+" é par, ")
+//     }else{
+//         resultadoParOuImpar.push(item+" é impar, ")
+//     }
+    
+// }
+// array.forEach(multiplicaPor2);
+// array.forEach(multiplicaPor3);
+// console.log(valorMultiplicadoPor2);
+// console.log(valorMultiplicadoPor3);
+// array.forEach(parOuImpar);
+// console.log(resultadoParOuImpar);
+
