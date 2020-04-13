@@ -197,22 +197,25 @@
 
 // Exercico - 2
 
-// let arrayAdultos = []
-// const pessoas = [
-//     {nome: "Pedro", idade: 20 },
-//     { nome: "João", idade: 10 },
-//     { nome: "Paula", idade: 12 },
-//     { nome: "Artur", idade: 89}
-// ]
+let arrayAdultos = []
+let arrayCriancas = []
+const pessoas = [
+    {nome: "Pedro", idade: 20 },
+    { nome: "João", idade: 10 },
+    { nome: "Paula", idade: 12 },
+    { nome: "Artur", idade: 89}
+]
 
-// // function adultos (){
-// //     for(i <= pessoas.length, )
-// //         if(pessoas.idade=>20){
-// //             arrayAdultos.push[]
-// //     }
-// // }
-
-// console.log(pessoas)
+function adultos (pessoas){
+    if(pessoas.idade>=20){
+			arrayAdultos.push(pessoas)
+	}else{
+			arrayCriancas.push(pessoas)
+	}
+}
+pessoas.forEach(adultos)
+console.log(arrayAdultos)
+console.log(arrayCriancas)
 
 // exercico - 3 - Atividades A, B e C
 
@@ -248,23 +251,23 @@
 
 // Exercico - 4
 
-let pessoasTem = [];
-let pessoasNao = [];
-const pessoas = [
-	{ nome: "Paula", idade: 12, altura: 1.8},
-	{ nome: "João", idade: 20, altura: 1.3},
-	{ nome: "Pedro", idade: 15, altura: 1.9},
-	{ nome: "Luciano", idade: 22, altura: 1.8},
-	{ nome: "Artur", idade: 10, altura: 1.2},
-	{ nome: "Soter", idade: 70, altura: 1.9}
-]
-function temPermissao(item){
-    if((pessoas.altura >= 1.5) && (pessoas.idade > 14) && (pessoas.idade < 60)){
-        pessoasTem.push(item);
-    }else{
-        pessoasNao.push(item);
-    }
-}
-
-pessoas.forEach(temPermissao);
-console.log(pessoasTem)
+// let pessoasTem = [];
+// let pessoasNao = [];
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+// function temPermissao(item){
+//     if((item.altura >= 1.5) && (item.idade > 14) && (item.idade < 60)){
+//         pessoasTem.push(item);
+//     }else{
+//         pessoasNao.push(item);
+//     }
+// }
+// pessoas.forEach(temPermissao);
+// console.log(pessoasTem)
+// console.log(pessoasNao)
