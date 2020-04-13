@@ -197,25 +197,25 @@
 
 // Exercico - 2
 
-let arrayAdultos = []
-let arrayCriancas = []
-const pessoas = [
-    {nome: "Pedro", idade: 20 },
-    { nome: "João", idade: 10 },
-    { nome: "Paula", idade: 12 },
-    { nome: "Artur", idade: 89}
-]
+// let arrayAdultos = []
+// let arrayCriancas = []
+// const pessoas = [
+//     {nome: "Pedro", idade: 20 },
+//     { nome: "João", idade: 10 },
+//     { nome: "Paula", idade: 12 },
+//     { nome: "Artur", idade: 89}
+// ]
 
-function adultos (pessoas){
-    if(pessoas.idade>=20){
-			arrayAdultos.push(pessoas)
-	}else{
-			arrayCriancas.push(pessoas)
-	}
-}
-pessoas.forEach(adultos)
-console.log(arrayAdultos)
-console.log(arrayCriancas)
+// function adultos (pessoas){
+//     if(pessoas.idade>=20){
+// 			arrayAdultos.push(pessoas)
+// 	}else{
+// 			arrayCriancas.push(pessoas)
+// 	}
+// }
+// pessoas.forEach(adultos)
+// console.log(arrayAdultos)
+// console.log(arrayCriancas)
 
 // exercico - 3 - Atividades A, B e C
 
@@ -271,3 +271,29 @@ console.log(arrayCriancas)
 // pessoas.forEach(temPermissao);
 // console.log(pessoasTem)
 // console.log(pessoasNao)
+
+// Exercício - 5
+
+let arrayCanceladas = []
+let arrayConfirmadas = []
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+function confirmaConsultas(consultas){
+	if(consultas.cancelada===true){
+		arrayCanceladas.push("Olá, Sr./Sra. "+consultas.nome+
+		". Estamos enviando esta mensagem para lembrar da sua consulta no dia "+consultas.dataDaConsulta+
+		". Por favor, acuse o recebimento deste email")
+	}else{
+		arrayCanceladas.push("Olá, "+consultas.nome+". Infelizmente, sua consulta marcada para o dia "
+		+consultas.dataDaConsulta+" foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la")
+	}
+}
+consultas.forEach(confirmaConsultas);
+console.log(arrayCanceladas)
+console.log(arrayConfirmadas)
+
