@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-controla-despesas">Controlador de Despesas
+        <p>Cadastrar despesa</p>
+        <Label>Valor</Label>
+        <input type="number" id="txtValor"><br>
+        <Label>Tipo Despesa:</Label>
+         <select name="tipoDespesa" id="tipoDespesa">
+             <option value="despesacasa">Despesas de casa</option>
+             <option value="despesafesta">Despesas com esta</option>
+             <option value="despesaviagem">Despesas com viagem</option>
+             <option value="despesaoutros">Outras despesas</option>
+         </select><br>
+         <label for="txtDescricao">Descrição</label>        
+         <input type="text" id="txtDescricao"><br>
+         <button onclick="cadastraDespesa()">Cadastrar Despesa</button>
+    </div><br><br>
+
+    <div class="container-despesas-detalhadas">
+        <label for="detalhatipo">Tipo de Despesas</label>
+        <select name="tipoDespesa" id="tipoDespesa"><br>
+            <option value="despesacasa">Despesas de casa</option>
+            <option value="despesafesta">Despesas com esta</option>
+            <option value="despesaviagem">Despesas com viagem</option>
+            <option value="despesaoutros">Outras despesas</option>
+        </select><br>
+        <label for="txtValorMinimo">Valor Minimo</label>
+        <input type="number" id="txtValorMinimo"><br>
+        <label for="txtValorMaximo">Valor Máximo</label>
+        <input type="number" id="txtValorMaximo"><br>
+        <button onclick="filtrar()">Filtrar</button>
+        <button onclick="limpaFiltro()">Limpar Filtros</button>
+    </div><br><br>
+
+    <div class="container-extrato">Extrado
+        <label for="valorTotal">Valor Total:</label>
+
+    </div>
+    
+</body>
+</html>
+
+
