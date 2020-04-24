@@ -34,15 +34,14 @@ class App extends React.Component {
   };
 
   onChangeInput = (event) => {
-    // this.setState({inputValue: event.target.value})  
+    this.setState({inputValue: event.target.value})  
   }
 
   criaTarefa = () => {
-    // const tarefa = {
-    //   id: 
-    //   texto:
-    //   completa:
-    }
+      id: this.state.Date.now(),
+      texto: this.state.inputValue,
+      completa: this.state.tarefas
+  };
   
 
   selectTarefa = (id) => {
