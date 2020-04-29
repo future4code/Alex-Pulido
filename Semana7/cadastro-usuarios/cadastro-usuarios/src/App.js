@@ -1,32 +1,34 @@
 import React from 'react';
-import axios from "axios";
 import './App.css';
 import CriarUsuario from './components/CriarUsuario';
-import styled from "styled-components";
+import ListarUsuario from './components/ListarUsuario';
 
-const FormAplicacao = styled.div`
 
-`
-
-const AppContainer = styled.div`
-  border: 1px solid blue;
-  width: 300px;
-  height: 160px;
-  margin: 100px 400px;
-  
-`
 
 class App extends React.Component{
+  state = {
+    idTela: false
+  };
+
+  onClickTelaListaUsuarios = () => {
+    this.setState({idTela: true});
+    console.log("estou no click lista usuario")
+  };
+
+  onClickTelaUsuario = () => {
+    this.setState({idTela: false});
+    console.log("estou no click tela usuario")
+  };
 
 
   render(){
-  return(
-    <FormAplicacao>
-      <button>Ir para a página de lista</button>
-      <AppContainer>
-        <CriarUsuario />
-      </AppContainer>
-    </FormAplicacao>
-  );}}
+    if(this.state.idTela){
+      console.log('valor id', this.state.idTela)
+      return <ListarUsuario onIdTelaListaUsuario={this.onClickTelaUsuario} />;
+    }else {
+      console.log('valor id', this.state.idTela)
+      return <CriarUsuario onIdTelaUsuario={this.onClickTelaListaUsuarios} />;
+    }
+  }}
 
 export default App;
