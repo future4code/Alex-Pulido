@@ -61,7 +61,7 @@ class CriarUsuario extends React.Component{
 				}
 			)
 			.then(retorno => {
-				window.alert("Usuário criado")
+				window.alert("Usuário criado!")
 			})
 			.catch(error => {
 				window.alert("Erro na criação do usuário")
