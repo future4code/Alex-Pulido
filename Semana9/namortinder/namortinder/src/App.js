@@ -48,6 +48,41 @@ const ImagenPessoa = styled.div`
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 10px auto;
   position: relative;
+
+  animation: ${(props) => {
+    switch (props.isAnimado) {
+      case "direita":
+        return "right 1s linear 1";
+
+      case "esquerda":
+        return "left 1s linear 1";
+
+      default:
+        return "none";
+    }
+  }};
+
+  @keyframes right {
+    0% {
+      transform: rotateZ(0deg) translate(0vw, 0vw);
+      opacity: 1;
+    }
+    100% {
+      transform: rotateZ(-45deg) translate(-200vw, 200vh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes left {
+    0% {
+      transform: rotateZ(0deg) translate(0vw, 0vw);
+      opacity: 1;
+    }
+    100% {
+      transform: rotateZ(-45deg) translate(-200vw, 200vh);
+      opacity: 0;
+    }
+  }
 `;
 
 const FotoPessoa = styled.img`
@@ -87,6 +122,7 @@ const App = () => {
   const [foto, setFoto] = useState("");
   const [pagina, setPagina] = useState("principal");
   const [contadorMatch, setContadorMatch] = useState([]);
+  const [animado, setAnimado] = useState("");
 
   const pegaProfile = () => {
     axios
@@ -102,6 +138,7 @@ const App = () => {
       })
       .catch((error) => {
         console.log(error);
+        setAnimado("esquerda");
       });
   };
 
@@ -110,8 +147,13 @@ const App = () => {
     CarregaPessoas();
   }, []);
 
+  useEffect(() => {
+    setAnimado("none")();
+  }, []);
+
   const onSelecionaPar = () => {
     adicionaParApi(id, true);
+    setAnimado("direita");
   };
 
   const adicionaParApi = () => {
@@ -191,7 +233,7 @@ const App = () => {
               </Badge>
             </Button>
           </BotoesHeader>
-          <ImagenPessoa>
+          <ImagenPessoa isAnimado={animado}>
             <FotoPessoa src={foto} alt="imagem da pessoa" />
             <Descricao>
               <strong>{nome}</strong>
