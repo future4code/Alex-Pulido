@@ -12,19 +12,20 @@ const ContainerMenu = styled.div`
   justify-content: space-between;
 `;
 
+const ContainerBotoes = styled.div`
+  display: flex;
+`;
+
 const Logo = styled.img`
   width: 200px;
   height: 100px;
   align-self: flex-start;
 `;
 
-const ContainerBotoes = styled.div`
-  display: flex;
-`;
-
 const BotaoPrivado = styled.button`
   background-color: transparent;
   padding: 10px;
+  margin: 0px 5px;
   width: 160px;
   height: 40px;
   color: #ffffff;
@@ -37,10 +38,27 @@ const BotaoPrivado = styled.button`
   }
 `;
 
-function Cabecalho() {
+function CabecalhoLogin() {
   const history = useHistory();
 
-  const goToLoginPage = () => {
+  const goToHomePage = () => {
+    history.push("/");
+  };
+
+  const goToCriarViagem = () => {
+    history.push("/CriarViagem");
+  };
+
+  const goToListarViagemPage = () => {
+    history.push("/ListarViagem");
+  };
+
+  const goToGerenciarInscricoes = () => {
+    history.push("/GerenciarInscricoes");
+  };
+
+  const onClickLogout = () => {
+    localStorage.clear();
     history.push("/Login");
   };
 
@@ -48,10 +66,16 @@ function Cabecalho() {
     <ContainerMenu>
       <Logo src={ImgLogo} />
       <ContainerBotoes>
-        <BotaoPrivado onClick={goToLoginPage}>Privado</BotaoPrivado>
+        <BotaoPrivado onClick={goToHomePage}>Home</BotaoPrivado>
+        <BotaoPrivado onClick={goToListarViagemPage}>Viagens</BotaoPrivado>
+        <BotaoPrivado onClick={goToCriarViagem}>Nova Viagem</BotaoPrivado>
+        <BotaoPrivado onClick={goToGerenciarInscricoes}>
+          Ger. Inscrições
+        </BotaoPrivado>
+        <BotaoPrivado onClick={onClickLogout}>Logout</BotaoPrivado>
       </ContainerBotoes>
     </ContainerMenu>
   );
 }
 
-export default Cabecalho;
+export default CabecalhoLogin;

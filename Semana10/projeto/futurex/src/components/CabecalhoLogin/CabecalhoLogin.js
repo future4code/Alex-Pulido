@@ -37,21 +37,21 @@ const BotaoPrivado = styled.button`
   }
 `;
 
-function Cabecalho() {
+function CabecalhoLogin() {
   const history = useHistory();
 
-  const goToLoginPage = () => {
-    history.push("/Login");
+  const goToHomePage = () => {
+    history.push("/");
   };
 
   return (
     <ContainerMenu>
       <Logo src={ImgLogo} />
       <ContainerBotoes>
-        <BotaoPrivado onClick={goToLoginPage}>Privado</BotaoPrivado>
+        <BotaoPrivado onClick={goToHomePage}>Home</BotaoPrivado>
       </ContainerBotoes>
     </ContainerMenu>
   );
 }
 
-export default Cabecalho;
+export default CabecalhoLogin;
