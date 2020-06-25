@@ -64,10 +64,16 @@ import * as fs from "fs";
 
 // Exercicio 3
 
-const data: any = fs.readFileSync("tarefas.txt");
-const arquivoTarefas: string = data.toString();
+const nomeArquivo: string = String(process.argv[2]);
+const itemTarefa: string = String(process.argv[3]);
 
-fs.writeFileSync("arquivoexec.json", "Olá Mundo");
+function editaLista(arquivo: string, item: string): any {
+  fs.appendFileSync(arquivo, item);
+}
+
+const adicionaTarefa: string = `${editaLista(nomeArquivo, itemTarefa)}`;
+
+console.log(adicionaTarefa);
 
 // Exercicio aula 1
 
