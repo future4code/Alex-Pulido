@@ -1,0 +1,30 @@
+[
+  {
+    "nome": "Alex",
+    "datanascimento": "28/09/1978",
+    "cpf": "999.999.999-11",
+    "saldo": 0,
+    "extrato": []
+  },
+  {
+    "nome": "Davi",
+    "datanascimento": "25/05/2006",
+    "cpf": "111.111.111-99",
+    "saldo": 0,
+    "extrato": []
+  },
+  {
+    "nome": "Denise",
+    "datanascimento": "08/10/1977",
+    "cpf": "888.888.888-00",
+    "saldo": 0,
+    "extrato": []
+  },
+  {
+    "nome": "Raimundo",
+    "datanascimento": "05/10/1985",
+    "cpf": "868.888.888-00",
+    "saldo": 0,
+    "extrato": []
+  }
+]
