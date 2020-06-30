@@ -1,78 +1,41 @@
 import * as fs from "fs";
 import moment from "moment";
 
-class ItemExtrato {
-  descricao: string;
-  valor: number;
-  dataoper: string;
+import { Conta } from "./contas";
 
-  constructor(newDescricao: string, newValor: number, newDataOper: string) {
-    this.descricao = newDescricao;
-    this.valor = newValor;
-    this.dataoper = newDataOper;
-  }
-}
+import { JSONFileManager } from "./JSONFileManager";
 
-class Conta {
-  nome: string;
-  datanascimento: string;
-  cpf: string;
-  saldo: number = 0;
-  extrato: ItemExtrato[];
+const newNome = process.argv[2];
+const newDataNascimento = process.argv[3];
+const nascimento = moment(newDataNascimento, "DD/MM/YYYY");
+const today = moment();
+const newCpf = process.argv[4];
 
-  constructor(
-    newNome: string,
-    newDataNascimento: string,
-    newCpf: string,
-    newItemExtrato: ItemExtrato[]
-  ) {
-    this.nome = newNome;
-    this.datanascimento = newDataNascimento;
-    this.cpf = newCpf;
-    this.extrato = newItemExtrato;
-  }
-}
+const novaConta: Conta = new Conta(newNome, newDataNascimento, newCpf, []);
+const idade = today.diff(nascimento, "years");
 
-const criarConta = (nome: string, dataNascimento: string, cpf: string) => {
-  const date = moment(dataNascimento, "DD/MM/YYYY");
-  const today = moment();
-  const idade = today.diff(date, "years");
-
+const validaIdade = () => {
   if (idade < 18) {
-    console.log("Usuário não pode ser menor de idade");
+    console.log("Usuário não pode ser menor de idade!");
     return;
   }
-
-  const caminhoArquivoUsuario =
-    "D:/Estudos/Future4/Alex-Pulido/semana15/aula48/F4Bank/users.json";
-  const arquivoUsuarios: Buffer = fs.readFileSync(caminhoArquivoUsuario);
-  const stringUsuario = arquivoUsuarios.toString();
-
-  const conta: Conta[] = JSON.parse(stringUsuario);
-
-  const foundConta = conta.find((conta: Conta) => {
-    return conta.cpf === cpf;
-  });
-  if (foundConta !== undefined) {
-    console.log("O usuário já existe na base de dados!");
-    return;
-  }
-  //Verifica se é um array
-  // console.log(Array.isArray(usuarios))
-
-  conta.push({
-    nome: nome,
-    datanascimento: dataNascimento,
-    cpf: cpf,
-    saldo: 0,
-    extrato: [],
-  });
-  const contaStringfy = JSON.stringify(conta, null, 2);
-  fs.writeFileSync(caminhoArquivoUsuario, contaStringfy);
 };
 
-const nome = process.argv[2];
-const dataNascimento = process.argv[3];
-const cpf = process.argv[4];
+validaIdade();
 
-criarConta(nome, dataNascimento, cpf);
+const fileManager: JSONFileManager = new JSONFileManager(
+  "D:/Estudos/Future4/Alex-Pulido/semana15/aula48/F4Bank/src/users.json"
+);
+const listaConta: any = fileManager.getObjectFromFile();
+
+const foundUser = listaConta.find((user: ))
+
+console.log(listaConta);
+
+// const validaCpf = listaConta.find(()) => {
+
+// }
+
+listaConta.push(novaConta);
+
+fileManager.writeOnjectToFile(listaConta);

@@ -26,5 +26,26 @@
     "cpf": "868.888.888-00",
     "saldo": 0,
     "extrato": []
+  },
+  {
+    "saldo": 0,
+    "nome": "Maria",
+    "datanascimento": "08/07/1965",
+    "cpf": "868.988.888-00",
+    "extrato": []
+  },
+  {
+    "saldo": 0,
+    "nome": "Pedro",
+    "datanascimento": "08/07/2018",
+    "cpf": "868.338.888-00",
+    "extrato": []
+  },
+  {
+    "saldo": 0,
+    "nome": "Maria",
+    "datanascimento": "08/07/1965",
+    "cpf": "868.988.888-00",
+    "extrato": []
   }
 ]
