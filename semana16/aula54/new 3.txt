@@ -1,0 +1,31 @@
+###Exercício 1
+
+a)Para a criar relações entre tabelas.
+
+b)INSERT INTO Rating (id, comment, rate, movie_id) 
+VALUES (
+	"001",
+    "Muito bom!",
+    7,
+	"004");
+
+c)1 row(s) affected - A avaliação é criada, não é feita uma validação se o ID existe
+na base Movie
+
+d)ALTER TABLE Movie DROP COLUMN rating;
+
+e)1 row(s) affected - Também é apagado.
+
+###Exercício 2
+
+a) Cria a tabela MovieCast com os campos movie_id e actor_id, onde movie_id é foreign key
+do campo ID da tabela Movie e actor_id é foreign key do campo id da tabela Actor
+
+b)INSERT INTO MovieCast(movie_id, actor_id)
+VALUES(
+		"004",
+    "001"
+)
+
+###Exercício 3
+
