@@ -1,0 +1,48 @@
+exports.handler = async event => {
+    const user = {
+        email: event.user.info.email
+    };
+    if (!user.email || user.email.indexOf("@") === -1) {
+        return {
+            statusCode: 400, 
+            body: JSON.stringify({
+                "isEmail": false,
+                "reason": "Não possui '@'"
+            })
+        }
+    } else if (!user.email || user.email.indexOf(".") === -1) {
+        return {
+            statusCode: 400, 
+            body: JSON.stringify({
+                "isEmail": false,
+                "reason": "Não possui '.'"
+            })
+        }
+    } else {
+        return {
+            statusCode: 200,
+            body: JSON.stringify({
+                "isEmail": true
+            })
+        }
+    }
+};
+
+A - Response:
+{
+  "statusCode": 400,
+  "body": "{\"isEmail\":false,\"reason\":\"Não possui '@'\"}"
+}
+
+B - Response:
+{
+  "statusCode": 400,
+  "body": "{\"isEmail\":false,\"reason\":\"Não possui '.'\"}"
+}
+
+C - Response:
+{
+  "statusCode": 200,
+  "body": "{\"isEmail\":true}"
+}
+

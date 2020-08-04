@@ -1,0 +1,27 @@
+Exercicio 3
+{
+  "valor": {
+		"info": {
+			"a": 5,
+			"b": 3
+		}
+  }
+}
+
+exports.handler = async event => {
+    const valor = {
+        a: event.valor.info.a,
+        b: event.valor.info.b
+    };
+    const result = valor.a + valor.b
+    return {
+        statusCode: 200, 
+        body: JSON.stringify({message: `${result}`})
+    }
+};
+
+Response:
+{
+  "statusCode": 200,
+  "body": "{\"message\":\"8\"}"
+}

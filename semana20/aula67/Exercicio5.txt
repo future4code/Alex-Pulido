@@ -1,0 +1,40 @@
+exports.handler = async (event) => {
+    if (!event.personagem || !event.personagem.info) {
+        return {
+            statusCode: 400,
+            body: JSON.stringify({ message: "Missing input" })
+        };
+    }
+    
+    const personagem = {
+        name: event.personagem.info.name,
+        personagem: event.personagem.info.personagem,
+        image: event.personagem.info.image
+    }
+    
+    if(!personagem.name) {
+        return {
+            statusCode: 400,
+            body: JSON.stringify({message: "Missing name"})
+        }
+    }
+    
+        if(!personagem.personagem) {
+        return {
+            statusCode: 400,
+            body: JSON.stringify({message: "Missing personagem"})
+        }
+    }
+    
+        if(!personagem.image) {
+        return {
+            statusCode: 400,
+            body: JSON.stringify({message: "Missing image"})
+        }
+    }
+    
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Personagem is correct"})
+    };
+};
