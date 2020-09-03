@@ -1,0 +1,54 @@
+A - Consigo entender o que está sendo feito.
+
+B - Response:
+{
+  "statusCode": 400,
+  "body": "{\"message\":\"Missing input\"}"
+}
+
+C - Response:
+{
+  "statusCode": 400,
+  "body": "{\"message\":\"Missing input\"}"
+}
+
+D - Response:
+{
+  "statusCode": 400,
+  "body": "{\"message\":\"Missing email\"}"
+}
+
+E - Response:
+{
+  "statusCode": 400,
+  "body": "{\"message\":\"Invalid password\"}"
+}
+
+F - Response:
+{
+  "statusCode": 200,
+  "body": "{\"message\":\"User is correct\"}"
+}
+
+G - if (!user.email) {
+    return {
+      statusCode: 422,
+      body: JSON.stringify({ message: "Missing email" })
+    };
+  }
+
+Response:
+{
+  "statusCode": 422,
+  "body": "{\"message\":\"Missing email\"}"
+}
+
+H - {
+  "user": {
+		"info": {
+			"name": "Astrodev",
+			"email": "astrodev@f4.com.br",
+			"password": "123456"
+		}
+  }
+}
